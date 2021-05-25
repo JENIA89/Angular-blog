@@ -42,7 +42,11 @@
       >
     </div>
   </div>
-  <button type="submit" class="btn btn-primary" [disabled]="form.invalid">
+  <button
+    type="submit"
+    class="btn btn-primary"
+    [disabled]="form.invalid || isSubmitted"
+  >
     Войти
   </button>
 </form>
