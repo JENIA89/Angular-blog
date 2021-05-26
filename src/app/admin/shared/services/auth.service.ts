@@ -6,7 +6,7 @@ import { Observable, Subject } from "rxjs";
 import { User } from "src/app/shared/interfaces";
 import {catchError, tap} from "rxjs/operators"
 
-@Injectable()
+@Injectable({providedIn:"root"})
 
 export class AuthService {
 
