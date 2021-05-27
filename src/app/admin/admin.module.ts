@@ -1,3 +1,4 @@
+import { SearchPipe } from './shared/search.pipe';
 import { AdminLayoutComponent } from './shared/components/admin-layout/admin-layout.component';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -7,12 +8,18 @@ import { CreatePageComponent } from './create-page/create-page.component';
 import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
 import { EditPageComponent } from './edit-page/edit-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { AuthService } from './shared/services/auth.service';
 import { SharedModule } from '../shared/shared.module';
 import { AuthGuard } from './shared/services/auth.guard';
 
 @NgModule({
-    declarations: [AdminLayoutComponent, LoginPageComponent, CreatePageComponent, DashboardPageComponent, EditPageComponent],
+    declarations: [
+        AdminLayoutComponent,
+        LoginPageComponent,
+        CreatePageComponent,
+        DashboardPageComponent,
+        EditPageComponent,
+        SearchPipe
+        ],
     imports: [
         CommonModule,
         FormsModule,

@@ -30,7 +30,7 @@ const INTERCEPTOR_PROVIDER: Provider = {
     AppRoutingModule,
     SharedModule
   ],
-  providers: [],
+  providers: [INTERCEPTOR_PROVIDER],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
